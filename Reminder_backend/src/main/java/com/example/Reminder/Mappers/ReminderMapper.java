@@ -10,7 +10,7 @@ import com.example.Reminder.RemindRequest;
 @Mapper
 public interface ReminderMapper {
 	
-	@Select("select * from reminder")
+	@Select("select title as title, message as message , user_id as userId from reminder")
     public List < RemindRequest > findAll();
 	
 	
